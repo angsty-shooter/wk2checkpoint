@@ -17,11 +17,9 @@ let autoUp={
     }
 }
 
-
 function collectDucks(){
     ++ducks
-    //ducks += clickUp.bread.multiplier
-    //ducks += autoUp.pond.multiplier
+    ducks += clickUp.bread.multiplier * clickUp.bread.quantity
     update()
 }
 
@@ -29,9 +27,7 @@ function buyBread(){
     if (ducks >= clickUp.bread.price){
         ducks -= clickUp.bread.price
         ++clickUp.bread.quantity
-        ++clickUp.bread.multiplier
         clickUp.bread.price += 50
-        console.log(clickUp.bread.multiplier)
     }
     update()    
 }
@@ -46,14 +42,18 @@ function buyPond(){
     update()    
 }
 
-//function startInterval(){
-//    collectionInterval = setInterval(collectAutoUp, 3000)
-//}
+// function startInterval(){
+//     collectionInterval = setInterval(collectAutoUp, 3000)
+    
+// }
 
 function update(){
     document.getElementById("rubber").innerText = `${ducks}`
+
     document.getElementById("crumbs").innerText = `${clickUp.bread.quantity}`
     document.getElementById("breadBtn").innerText = `${clickUp.bread.price}`
+    //document.getElementById("breadX").innerText = `${clickUp.bread.multiplier}`
     document.getElementById("liquid").innerText = `${autoUp.pond.quantity}`
     document.getElementById("pondBtn").innerText = `${autoUp.pond.price}`
+    //document.getElementById("pondX").innerText = `${autoUp.pond.multiplier}`
 }
