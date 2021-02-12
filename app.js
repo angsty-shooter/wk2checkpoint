@@ -42,10 +42,10 @@ function buyPond(){
     update()    
 }
 
-// function startInterval(){
-//     collectionInterval = setInterval(collectAutoUp, 3000)
+function startInterval(){
+    collectionInterval = setInterval(collectAutoUp, 3000)
     
-// }
+}
 
 function update(){
     document.getElementById("rubber").innerText = `${ducks}`
