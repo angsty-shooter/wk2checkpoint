@@ -20,22 +20,21 @@ let autoUp={
 
 function collectDucks(){
     ++ducks
-    console.log(ducks)
     update()
 }
 
 function buyBread(){
-    
-    if (ducks = clickUp.bread.price){
+    debugger
+    if (ducks == clickUp.bread.price){
         ducks -= clickUp.bread.price
         ++clickUp.bread.quantity
     }
     update()    
 }
 
-function startInterval(){
-    collectionInterval = setInterval(collectAutoUp, 3000)
-}
+//function startInterval(){
+//    collectionInterval = setInterval(collectAutoUp, 3000)
+//}
 
 function update(){
     document.getElementById("rubber").innerText = `${ducks}`
