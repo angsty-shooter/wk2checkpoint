@@ -22,15 +22,22 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
-                    <p><img src="duck.png" alt="duckie" class="img-fluid" onclick="mine()"></p>
+                    <p><img src="duck.png" alt="duckie" class="img-fluid" onclick="collectDucks()"></p>
                 </div>
+
+                <!-- counters -->
                 <div class="col-3 text-light">
                     <p>Ducks: <span id="rubber"></span></p>
+                    <p>Bread: <span id="crumbs"></span></p>
+                    <p>Ponds: <span id="liquid"></span></p>
+                    <p>Multiplier: x<span id="xxx"></span></p>
                 </div>
+
+                <!-- buttons -->
                 <div class="col">
-                    <button id="">Bread</button><span class="text-white"> cost</span>
+                    <button id="breadtBn" onclick="buyBread()">Bread</button><span class="text-white"> 50</span>
                     <div class="row">
-                        <button id="">Pond</button>
+                        <button id="pondBtn" onclick="">Pond</button><span class="text-white"> 100</span>
                     </div>
                 </div>
             </div>

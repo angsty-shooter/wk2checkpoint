@@ -3,7 +3,7 @@ let ducks = 0
 
 let clickUp={
     bread: {
-        price: 100,
+        price: 50,
         quantity: 0,
         multiplier: 1
     }
@@ -11,9 +11,9 @@ let clickUp={
 
 let autoUp={
     pond: {
-        price: 600,
+        price: 100,
         quantity: 0,
-        multiplier: 10
+        multiplier: 5
     }
 }
 
@@ -24,10 +24,20 @@ function collectDucks(){
     update()
 }
 
+function buyBread(){
+    
+    if (ducks = clickUp.bread.price){
+        ducks -= clickUp.bread.price
+        ++clickUp.bread.quantity
+    }
+    update()    
+}
+
 function startInterval(){
     collectionInterval = setInterval(collectAutoUp, 3000)
 }
 
 function update(){
     document.getElementById("rubber").innerText = `${ducks}`
+    document.getElementById("crumbs").innerText = `${clickUp.bread.quantity}`
 }
