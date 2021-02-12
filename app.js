@@ -24,7 +24,6 @@ function collectDucks(){
 }
 
 function buyBread(){
-    debugger
     if (ducks == clickUp.bread.price){
         ducks -= clickUp.bread.price
         ++clickUp.bread.quantity
