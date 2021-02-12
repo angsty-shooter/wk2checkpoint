@@ -11,11 +11,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet"> -->
+    
 </head>
 
 <body class="bg-image">
 
-    <header></header>
+    <header>
+        <div class="container">
+            <div class="row text-light text-center mt-3 mb-5">
+                <div class="col">
+                    <h1>Duck Days</h1>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
     <main>
@@ -28,17 +39,17 @@
 
                 <!-- counters -->
                 <div class="col-3 text-light">
-                    <p>Ducks: <span id="rubber"></span></p>
-                    <p>Bread: <span id="crumbs"></span></p>
-                    <p>Ponds: <span id="liquid"></span></p>
+                    <p>Ducks: <span id="rubber">0</span></p>
+                    <p>Bread: <span id="crumbs">0</span></p>
+                    <p>Ponds: <span id="liquid">0</span></p>
                 </div>
 
                 <!-- buttons -->
                 <class class="col text-white">
-                    <p><button onclick="buyBread()">Bread</button><span id="breadBtn">50</span></p>
-                    <p>Multiplier: <span id="breadX"></span></p>
-                    <p><button onclick="buyPond()">Pond</button><span id="pondBtn">100</span></p>
-                    <p>Multiplier: <span id="pondX"></span></p>
+                    <p><button onclick="buyBread()">Bread</button><span> </span><span id="breadBtn">50</span></p>
+                    <p>Multiplier: +<span id="breadX">0</span></p>
+                    <p><button onclick="buyPond()">Pond</button><span> </span><span id="pondBtn">100</span></p>
+                    <p>Multiplier: +<span id="pondX">0</span></p>
                 </class>
 
 

@@ -52,8 +52,8 @@ function update(){
 
     document.getElementById("crumbs").innerText = `${clickUp.bread.quantity}`
     document.getElementById("breadBtn").innerText = `${clickUp.bread.price}`
-    //document.getElementById("breadX").innerText = `${clickUp.bread.multiplier}`
+    document.getElementById("breadX").innerText = `${clickUp.bread.quantity}`
     document.getElementById("liquid").innerText = `${autoUp.pond.quantity}`
     document.getElementById("pondBtn").innerText = `${autoUp.pond.price}`
-    //document.getElementById("pondX").innerText = `${autoUp.pond.multiplier}`
+    document.getElementById("pondX").innerText = `${autoUp.pond.quantity}`
 }
