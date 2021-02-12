@@ -24,9 +24,17 @@ function collectDucks(){
 }
 
 function buyBread(){
-    if (ducks == clickUp.bread.price){
+    if (ducks >= clickUp.bread.price){
         ducks -= clickUp.bread.price
         ++clickUp.bread.quantity
+    }
+    update()    
+}
+
+function buyPond(){
+    if (ducks >= autoUp.pond.price){
+        ducks -= autoUp.pond.price
+        ++autoUp.pond.quantity
     }
     update()    
 }
@@ -38,4 +46,5 @@ function buyBread(){
 function update(){
     document.getElementById("rubber").innerText = `${ducks}`
     document.getElementById("crumbs").innerText = `${clickUp.bread.quantity}`
+    document.getElementById("liquid").innerText = `${autoUp.pond.quantity}`
 }
