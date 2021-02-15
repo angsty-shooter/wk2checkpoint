@@ -98,17 +98,13 @@ function update(){
 
     document.getElementById("crumbs").innerText = `${clickUp.bread.quantity}`
     document.getElementById("breadBtn").innerText = `${clickUp.bread.price}`
-    document.getElementById("breadX").innerText = `${clickUp.bread.multiplier}`
     
     document.getElementById("liquid").innerText = `${autoUp.pond.quantity}`
     document.getElementById("pondBtn").innerText = `${autoUp.pond.price}`
-    document.getElementById("pondX").innerText = `${autoUp.pond.multiplier}`
     
     document.getElementById("juice").innerText = `${clickUp.grapes.quantity}`
     document.getElementById("grapeBtn").innerText = `${clickUp.grapes.price}`
-    document.getElementById("grapeX").innerText = `${clickUp.grapes.multiplier}`
     
     document.getElementById("slap").innerText = `${autoUp.waddles.quantity}`
     document.getElementById("waddleBtn").innerText = `${autoUp.waddles.price}`
-    document.getElementById("waddleX").innerText = `${autoUp.waddles.multiplier}`
 }
