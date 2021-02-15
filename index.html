@@ -35,7 +35,7 @@
             <!-- <embed src="The Duck Song.mp3" loop="true" autostart="true" width="2" height="0"> -->
             <class class="row">
                 <div class="col-3">
-                    <p><img src="duck.png" alt="duckie" class="img-fluid" onclick="collectDucks()"></p>
+                    <p><img src="duck.gif" alt="duckie" class="img-fluid" onclick="collectDucks()"></p>
                 </div>
 
                 <!-- counters -->
@@ -43,6 +43,8 @@
                     <p>Ducks: <span id="rubber">0</span></p>
                     <p>Bread: <span id="crumbs">0</span></p>
                     <p>Ponds: <span id="liquid">0</span></p>
+                    <p>Grapes: <span id="juice">0</span></p>
+                    <p>Waddles: <span id="slap">0</span></p>
                 </div>
 
                 <!-- buttons -->
@@ -52,6 +54,12 @@
                     <p><button onclick="buyPond()">Pond</button><span> </span><span id="pondBtn">100</span></p>
                     <p>Multiplier: +<span id="pondX">0</span></p>
                 </class>
+                <div class="col text-white">
+                    <p><button onclick="buyGrapes()">Grapes</button><span> </span><span id="grapeBtn">150</span></p>
+                    <p>Multiplier: +<span id="grapeX">0</span></p>
+                    <p><button onclick="buyWaddles()">Waddles</button><span> </span><span id="waddleBtn">200</span></p>
+                    <p>Multiplier: +<span id="waddleX">0</span></p>
+                </div>
 
 
             </div>
