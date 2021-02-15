@@ -30,7 +30,7 @@ function multipleDucks(){
 }
 
 function collectAutoUp(){
-    console.log("got item")
+    console.log("adding ducks")
     update()
     if(autoUp.pond.quantity >= 1){
         ducks += autoUp.pond.multiplier*autoUp.pond.quantity
